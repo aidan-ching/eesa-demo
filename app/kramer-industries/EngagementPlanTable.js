@@ -103,7 +103,7 @@ export default function EngagementPlanTable() {
                     Coordinate with technical team
                   </div>
                   <div className="font-medium text-[#A3A3A3] text-[10pt]">
-                  Delegate and ensure accurate implementation of the client's needs 
+                  Delegate and ensure accurate implementation of the clients needs 
                   </div>
                 </div>
               </div>
