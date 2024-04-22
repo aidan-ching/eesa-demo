@@ -49,7 +49,8 @@ export default function Table() {
               <CompaniesEntry
                 name="ACME Co"
                 url="acme.co"
-                logoUrl="/eesa_logo.png"
+                logoUrl="/acme-logo.png"
+                href="/acme-co"
               />
             </td>
             <td>

@@ -6,11 +6,11 @@ export default function EngagementPlanTable() {
   const router = useRouter();
   const handleClick = (num) => {
     if(num === 1){
-      router.replace("/kramer-industries/detail")
+      router.replace("/acme-co/detail")
     }
 
     else if(num===2){
-      router.replace("/kramer-industries/detail/1")
+      router.replace("/acme-co/detail/1")
     }
 
   }
@@ -27,17 +27,18 @@ export default function EngagementPlanTable() {
                     1
                   </div>
                   <div className="flex flex-col p-3 pb-5">
-                    <div className="font-medium text-[12pt]">Email Katherine</div>
+                    <div className="font-medium text-[12pt]">Email Matt</div>
                     <div className="font-medium text-[#A3A3A3] text-[10pt]">
-                    Introduce your newest AI document feature
+                      Point out usage and possible improvement to their existing
+                      processes
                     </div>
                   </div>
                 </div>
               </td>
               <td className="font-medium text-[12pt]">
                 <div className="flex justify-center items-center gap-3">
-                  <div className="w-[15px] h-[15px] rounded-full bg-[#ED8D5C]" />
-                  Pending
+                  <div className="w-[15px] h-[15px] rounded-full bg-[#46CF7D]" />
+                  Completed
                 </div>
               </td>
           </tr>
@@ -54,14 +55,14 @@ export default function EngagementPlanTable() {
                       Schedule demo meeting
                     </div>
                     <div className="font-medium text-[#A3A3A3] text-[10pt]">
-                    Confirm Google Meet timing with Katherine for this week
+                      Confirm Google Meet with Matt for April 28th at 2pm PST
                     </div>
                   </div>
                 </div>
               </td>
               <td className="font-medium text-[12pt]">
                 <div className="flex justify-center items-center gap-3">
-                  <div className="w-[15px] h-[15px] rounded-full bg-[#ED8D5C]" />
+                  <div className="w-[15px] h-[15px] rounded-full bg-[#3B01E3]" />
 
                   <div>Awaiting Approval</div>
                 </div>
@@ -79,7 +80,8 @@ export default function EngagementPlanTable() {
                     Prepare demo meeting notes
                   </div>
                   <div className="font-medium text-[#A3A3A3] text-[10pt]">
-                  Highlight Kramer Industries use cases for the AI document feature
+                    Highlight ACME Co’s successful milestones and how further
+                    ones can be achieved
                   </div>
                 </div>
               </div>
@@ -103,7 +105,8 @@ export default function EngagementPlanTable() {
                     Coordinate with technical team
                   </div>
                   <div className="font-medium text-[#A3A3A3] text-[10pt]">
-                  Delegate and ensure accurate implementation of the client's needs 
+                    Delegate and ensure accurate implementation of the clients
+                    needs
                   </div>
                 </div>
               </div>
@@ -124,10 +127,10 @@ export default function EngagementPlanTable() {
                 </div>
                 <div className="flex flex-col p-3 pb-5">
                   <div className="font-medium text-[12pt]">
-                    Follow up with Katherine
+                    Follow up with Matt
                   </div>
                   <div className="font-medium text-[#A3A3A3] text-[10pt]">
-                  Send an email asking how the AI feature is working
+                    Send an email with post-meeting documentation
                   </div>
                 </div>
               </div>

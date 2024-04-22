@@ -46,11 +46,11 @@ export default function DetailView() {
 
       </div>
 
-      <div className="rounded shadow-2xl mb-10 flex flex-row items-center gap-3 drop-shadow p-3 border mt-5">
+      <div className="rounded shadow-2xl mb-36 flex flex-row items-center gap-3 drop-shadow p-3 border mt-5">
         <Image src="/pfp/pfp1.png" width={50} height={50} alt="pfp" className="rounded-full w-[40px] h-[40px] object-cover"/>
         <div>Awaiting response from Katherine...</div>
         <div className="grow"/>
-        <div><Image src="/logo/gmail.png" width={50} height={50} alt="logo"/>View in Gmail</div>
+        <div className="flex flex-row items-center gap-3 border shadow p-2 rounded"><Image src="/logo/gmail.png" width={35} height={35} alt="logo"/>View in Gmail</div>
       </div>
     </div>
   );
