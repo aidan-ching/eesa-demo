@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { IoMdTime } from "react-icons/io";
 import { IoVideocamOutline, IoCalendarClearOutline, IoEarthOutline   } from "react-icons/io5";
+import { FaRegCalendar } from "react-icons/fa";
 export default function Page() {
   return (
     <div>
@@ -62,9 +63,10 @@ export default function Page() {
             <div className="flex flex-col gap-3 mt-5">
                 <div className="text-[#737373] font-semibold text-[11pt] flex items-center gap-2"><IoMdTime size={30}/> <div>30 Minutes</div></div>
                 <div className="text-[#737373] font-semibold text-[11pt] flex items-center gap-2"><IoVideocamOutline size={30}/> <div>Web conferencing details provided upon confirmation.</div></div>
-                <div className="text-[#737373] font-semibold text-[11pt] flex items-center gap-2"><IoCalendarClearOutline size={30}/> <div>11:00am - 11:30am, Thursday, April 25, 2024</div></div>
+                <div className="text-[#737373] font-semibold text-[11pt] flex items-center gap-2"><IoCalendarClearOutline size={30}/> <div>2:00pm - 2:30pm, Wednesday, April 28, 2024</div></div>
                 <div className="text-[#737373] font-semibold text-[11pt] flex items-center gap-2"><IoEarthOutline size={30}/> <div>Pacific Time - US & Canada</div></div>
             </div>
+            <div className="flex justify-end font-medium text-[11pt] text-white"><button className="bg-[#3B01E3] flex items-center px-3 py-1.5 gap-2 rounded-md"><FaRegCalendar />Schedule</button></div>
           </div>
         </div>
       </div>

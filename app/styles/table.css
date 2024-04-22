@@ -8,7 +8,7 @@
   width:100%;
 }
 
-.overview-table td, th {
+.overview-table td,th{
   border-left:solid #EAECF0 1px;
   border-top:solid #EAECF0 1px;
   padding: 5px;

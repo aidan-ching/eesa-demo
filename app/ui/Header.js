@@ -1,9 +1,14 @@
+'use client'
+
+import { usePathname } from "next/navigation";
+
 import Link from "next/link";
 import { IoGridOutline } from "react-icons/io5";
 import { RiCalendarScheduleLine } from "react-icons/ri";
 import { CiMail } from "react-icons/ci";
 
 export default function Header() {
+  const pathname = usePathname()
   return (
     <div className="flex w-full border-b-2 border-[#EAECF0]">
       <Link href="/">

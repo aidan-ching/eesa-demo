@@ -1,8 +1,9 @@
 import "@/app/styles/EngagementPlanTable.css";
 import Link from "next/link";
+import clsx from "clsx";
 import { useRouter } from "next/navigation";
 
-export default function EngagementPlanTable() {
+export default function EngagementPlanTable({status}) {
   const router = useRouter();
   const handleClick = (num) => {
     if(num === 1){
@@ -36,8 +37,13 @@ export default function EngagementPlanTable() {
               </td>
               <td className="font-medium text-[12pt]">
                 <div className="flex justify-center items-center gap-3">
-                  <div className="w-[15px] h-[15px] rounded-full bg-[#ED8D5C]" />
-                  Pending
+                  <div className={clsx("w-[15px] h-[15px] rounded-full ", 
+                  {
+                    'bg-[#ED8D5C]': status === "Pending",
+                    'bg-[#F7DE04]': status === "In Progress",
+                    'bg-[#46CF7D]': status === "Complete"
+                  },)} />
+                  {status}
                 </div>
               </td>
           </tr>
@@ -63,7 +69,7 @@ export default function EngagementPlanTable() {
                 <div className="flex justify-center items-center gap-3">
                   <div className="w-[15px] h-[15px] rounded-full bg-[#ED8D5C]" />
 
-                  <div>Awaiting Approval</div>
+                  <div>Pending</div>
                 </div>
               </td>
             </tr>

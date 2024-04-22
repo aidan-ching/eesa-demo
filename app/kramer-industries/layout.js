@@ -8,16 +8,36 @@ import { ImStatsDots } from "react-icons/im";
 import { IoMdInformationCircleOutline } from "react-icons/io";
 import clsx from "clsx";
 import Link from "next/link";
+import { usePathname } from 'next/navigation'
+
 
 import RelevantMetrics from "@/app/kramer-industries/RelevantMetrics";
 import DetailView from "@/app/kramer-industries/DetailView";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import EngagementPlanTable from "@/app/kramer-industries/EngagementPlanTable";
 
 export default function Layout({ children }) {
   const [view, setView] = useState("metrics");
+  const pathname = usePathname()
+  const [status, setStatus] = useState("Pending");
+
+  useEffect(() => {
+    if (pathname === "/kramer-industries/detail"){
+      setView("detail");
+    }
+  });
+
+  const handleEesaPilot = () => {
+    setStatus("In Progress")
+    setTimeout(() => {
+      setStatus("Complete")
+    }, 5000);
+  }
+
+  
+
 
   const handleViewChange = (view) => {
     setView(view);
@@ -45,10 +65,12 @@ export default function Layout({ children }) {
           </div>
 
           <div className="border-b flex flex-row justify-end">
-            <button className="bg-[#3B01E3] text-white flex flex-row justify-between items-center font-medium px-3 py-1 rounded gap-3 m-3">
-              <BsLightningChargeFill size={18} className="" />
-              Eesa Pilot
-            </button>
+            <Link href="/kramer-industries/detail">
+              <button className="bg-[#3B01E3] text-white flex flex-row justify-between items-center font-medium px-3 py-1 rounded gap-3 m-3" onClick={() => handleEesaPilot()}>
+                <BsLightningChargeFill size={18} className="" />
+                Eesa Pilot
+              </button>
+            </Link>
           </div>
         </div>
 
@@ -57,13 +79,12 @@ export default function Layout({ children }) {
             <PiPath size={20} /> Engagement Plan
           </div>
           <div className="flex flex-row items-center mr-20 gap-3 font-medium p-4">
-            {" "}
             <CiCircleCheck size={25} /> Status
           </div>
         </div>
 
         <div className="w-full">
-          <EngagementPlanTable />
+          <EngagementPlanTable status={status}/>
         </div>
       </div>
 

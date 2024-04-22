@@ -1,24 +1,53 @@
-
 import "@/app/styles/table.css";
 
 import CompaniesEntry from "@/app/ui/Overview/CompaniesEntry";
 import UpsellButton from "@/app/ui/Overview/UpsellButton";
 import ChurnriskButton from "@/app/ui/Overview/ChurnriskButton";
 import NeutralButton from "@/app/ui/Overview/NeutralButton";
+import { BsBuildings } from "react-icons/bs";
+import { CiHeart } from "react-icons/ci";
+import { PiPath } from "react-icons/pi";
+import { IoPeopleOutline } from "react-icons/io5";
+import { CgProfile } from "react-icons/cg";
+import { CiCalendarDate } from "react-icons/ci";
 
 export default function Table() {
   return (
     <div className="overview-table w-[100%] mx-5">
-      <table className="w-full">
+      <table className="w-full table-fixed">
         <thead>
           <tr>
-            <th>#</th>
-            <th>Companies</th>
-            <th>Client State</th>
-            <th>Stage</th>
-            <th>Employees</th>
-            <th>LinkedIn</th>
-            <th>Date Added</th>
+            <th className="w-[4%]">#</th>
+            <th className="w-[15%]">
+              <div className="flex items-center gap-2">
+                <BsBuildings /> Client State
+              </div>
+            </th>
+            <th className="w-[11%]">
+              <div className="flex items-center gap-2">
+                <CiHeart /> Client State
+              </div>
+            </th>
+            <th className="w-[22%]">
+              <div className="flex items-center gap-2">
+                <PiPath /> Client State
+              </div>
+            </th>
+            <th className="w-[12%]">
+              <div className="flex items-center gap-2">
+                <IoPeopleOutline /> Client State
+              </div>
+            </th>
+            <th className="w-[17%]">
+              <div className="flex items-center gap-2">
+                <CgProfile size={15}/> Client State
+              </div>
+            </th>
+            <th className="w-[17%]">
+              <div className="flex items-center gap-2">
+                <CiCalendarDate size={20}/> Client State
+              </div>
+            </th>
           </tr>
         </thead>
         <tbody>
@@ -68,7 +97,7 @@ export default function Table() {
               <CompaniesEntry
                 name="Cloudlink"
                 url="cloudlink.com"
-                logoUrl="/eesa_logo.png"
+                logoUrl="/cloudlink.png"
               />
             </td>
             <td>
@@ -86,7 +115,7 @@ export default function Table() {
               <CompaniesEntry
                 name="Precision Tech"
                 url="precisiontech.co"
-                logoUrl="/eesa_logo.png"
+                logoUrl="/precision.png"
               />
             </td>
             <td>
@@ -104,7 +133,7 @@ export default function Table() {
               <CompaniesEntry
                 name="Smart Track"
                 url="smarttrack.com"
-                logoUrl="/eesa_logo.png"
+                logoUrl="/smarttrack.png"
               />
             </td>
             <td>
@@ -122,7 +151,7 @@ export default function Table() {
               <CompaniesEntry
                 name="VirtualEase"
                 url="virtualease.co"
-                logoUrl="/eesa_logo.png"
+                logoUrl="/virtualease.png"
               />
             </td>
             <td>
@@ -140,7 +169,7 @@ export default function Table() {
               <CompaniesEntry
                 name="OptiStore"
                 url="optistore.com"
-                logoUrl="/eesa_logo.png"
+                logoUrl="/optistore.png"
               />
             </td>
             <td>
@@ -158,7 +187,7 @@ export default function Table() {
               <CompaniesEntry
                 name="BrightScape"
                 url="brightscape.com"
-                logoUrl="/eesa_logo.png"
+                logoUrl="/brightscape.png"
               />
             </td>
             <td>
