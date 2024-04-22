@@ -1,6 +1,6 @@
 export default function MetricCard({ heading, subheader, body }) {
   return (
-    <div className="w-[400px] h-[200px] shadow-xl p-6 flex flex-col">
+    <div className="w-[400px] h-[200px] shadow-xl p-6 flex flex-col rounded">
       <div>
         <div className="font-semibold text-[20pt] text-[#333333]">
           {heading}

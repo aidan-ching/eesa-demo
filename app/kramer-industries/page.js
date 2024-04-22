@@ -22,7 +22,7 @@ export default function Page() {
   };
 
   return (
-    <div className="flex">
+    <div className="flex overflow-y-auto">
       <div className="w-[40%] h-full border-r">
         <div>
           <div className="flex flex-row p-5 items-center">
@@ -94,7 +94,7 @@ export default function Page() {
           </button>
         </div>
         {view === "metrics" && <RelevantMetrics />}
-        {view === "detail" && <DetailView />}
+        {view === "detail" && <DetailView/>}
       </div>
 
         </div>
