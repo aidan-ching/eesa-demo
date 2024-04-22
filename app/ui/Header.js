@@ -7,8 +7,8 @@ export default function Header() {
   return (
     <div className="flex w-full border-b-2 border-[#EAECF0]">
       <Link href="/">
-        <div className="px-3 py-2 mx-2 text-black font-medium rounded-lg flex flex-row items-center">
-        <IoGridOutline size="20" className="mr-2"/>
+        <div className="px-3 py-2 mx-2 text-[#393939] font-medium rounded-lg flex flex-row items-center">
+        <IoGridOutline size="20" className="mr-2" color="#393939"/>
           Overview
         </div>
       </Link>
@@ -16,8 +16,8 @@ export default function Header() {
       <div className="grow"/>
 
       <Link href="/">
-        <div className="px-3 py-2 mx-2 text-black font-medium rounded-lg flex flex-row items-center">
-        <RiCalendarScheduleLine size="20" className="mr-2" />
+        <div className="px-3 py-2 mx-2 text-[#393939] font-medium rounded-lg flex flex-row items-center">
+        <RiCalendarScheduleLine size="20" className="mr-2" color="#393939"/>
           Schedule Meeting
         </div>
       </Link>
@@ -25,8 +25,8 @@ export default function Header() {
       
 
       <Link href="/">
-        <div className="px-3 py-2 mx-2 text-black font-medium rounded-lg flex flex-row items-center">
-        <CiMail size="20" className="mr-2" strokeWidth="0.5"/>
+        <div className="px-3 py-2 mx-2 text-[#393939] font-medium rounded-lg flex flex-row items-center">
+        <CiMail size="20" className="mr-2" color="#393939" strokeWidth="0.5"/>
           Email
         </div>
       </Link>

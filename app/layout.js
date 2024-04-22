@@ -1,6 +1,5 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Providers } from "./providers";
 import SideNav from '@/app/ui/sidenav';
 import Header from '@/app/ui/Header';
 
@@ -13,7 +12,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${inter.className} antialiased`}>
+    <html lang="en" className={`${inter.className} antialiased bg-white`}>
       <body>
         <div className="flex h-screen flex-col md:flex-row md:overflow-hidden">
           <div className="w-full flex-none md:w-64">
@@ -21,7 +20,7 @@ export default function RootLayout({ children }) {
           </div>
           <div className="flex flex-col w-full h-full">
             <Header className="w-full"/>
-            <Providers>{children}</Providers>
+            {children}
           </div>
         </div>
       </body>

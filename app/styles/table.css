@@ -1,0 +1,26 @@
+
+.overview-table table {
+  border-collapse:separate;
+  border:solid #EAECF0 1px;
+  border-radius:10px;
+  font-weight:400;
+  color: #393939;
+  width:100%;
+}
+
+.overview-table td, th {
+  border-left:solid #EAECF0 1px;
+  border-top:solid #EAECF0 1px;
+  padding: 5px;
+}
+
+.overview-table th {
+  border-top: none;
+  text-align: start;
+  font-weight:400;
+
+}
+
+.overview-table td:first-child, th:first-child {
+   border-left: none;
+}
