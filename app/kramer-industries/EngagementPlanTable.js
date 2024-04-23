@@ -41,7 +41,6 @@ export default function EngagementPlanTable({status}) {
                   {
                     'bg-[#ED8D5C]': status === "Pending",
                     'bg-[#F7DE04]': status === "In Progress",
-                    'bg-[#46CF7D]': status === "Complete"
                   },)} />
                   {status}
                 </div>

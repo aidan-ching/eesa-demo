@@ -18,7 +18,7 @@ export default function navlinks() {
           Boards
         </div>
       </Link>
-      <Link href="/">
+      <Link href="/risk">
         <div className="hover:bg-[#F3F3F4] px-3 py-2 mx-2 text-[#71717A] font-medium rounded-lg flex flex-row items-center">
           <BiSquareRounded size="15" color="#71717A" className="mr-3.5 ml-4" />
           Risk

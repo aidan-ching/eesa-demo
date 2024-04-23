@@ -31,9 +31,6 @@ export default function Layout({ children }) {
 
   const handleEesaPilot = () => {
     setStatus("In Progress")
-    setTimeout(() => {
-      setStatus("Complete")
-    }, 5000);
   }
 
   
