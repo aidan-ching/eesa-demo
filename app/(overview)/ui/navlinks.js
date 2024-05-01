@@ -7,7 +7,7 @@ import { CiGrid41 } from "react-icons/ci";
 import { BiSquareRounded } from "react-icons/bi";
 import { MdOutlineTune } from "react-icons/md";
 
-export default function navlinks() {
+export default function NavLinks() {
   const path = usePathname();
 
   return (
