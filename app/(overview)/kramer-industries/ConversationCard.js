@@ -7,7 +7,7 @@ export default function ConversationCard({
   body,
 }) {
   return (
-    <div className="w-[350px] h-[200px] shadow-xl p-6 flex flex-col rounded">
+    <div className="w-[350px] h-[250px] shadow-xl p-6 flex flex-col rounded">
       <div className="flex flex-row justify-between">
         <div className="flex flex-row items-center gap-5">
           <Image

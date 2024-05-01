@@ -19,32 +19,32 @@ export default function Table() {
           <tr>
             <th className="w-[4%]">#</th>
             <th className="w-[15%]">
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-1">
                 <BsBuildings /> Companies
               </div>
             </th>
             <th className="w-[11%]">
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-1">
                 <CiHeart /> Client State
               </div>
             </th>
             <th className="w-[22%]">
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-1">
                 <PiPath /> Stage
               </div>
             </th>
             <th className="w-[12%]">
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-1">
                 <IoPeopleOutline /> Employees
               </div>
             </th>
             <th className="w-[17%]">
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-1">
                 <CgProfile size={15}/> LinkedIn
               </div>
             </th>
             <th className="w-[17%]">
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-1">
                 <CiCalendarDate size={20}/> Date Added
               </div>
             </th>
