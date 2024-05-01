@@ -1,5 +1,4 @@
-import "@/app/styles/EngagementPlanTable.css";
-import Link from "next/link";
+import "@/app/(overview)/styles/EngagementPlanTable.css";
 import clsx from "clsx";
 import { useRouter } from "next/navigation";
 
@@ -24,7 +23,7 @@ export default function EngagementPlanTable({status}) {
 
               <td className="w-[60%]">
                 <div className="flex flex-row items-center">
-                  <div className="flex justify-center items-center m-3 w-[30px] h-[30px] border-[3px] font-semibold text-[#D9D9D9] rounded-full">
+                  <div className="flex justify-center items-center m-3 min-w-[30px] min-h-[30px] border-[3px] font-semibold text-[#D9D9D9] rounded-full">
                     1
                   </div>
                   <div className="flex flex-col p-3 pb-5">
@@ -51,7 +50,7 @@ export default function EngagementPlanTable({status}) {
             <tr className="hover:bg-[#F4F5FD] cursor-pointer" onClick={() => handleClick(2)}>
               <td className="w-[60%]">
                 <div className="flex flex-row items-center">
-                  <div className="flex justify-center items-center m-3 w-[35px] h-[30px] border-[3px] font-semibold text-[#D9D9D9] rounded-full">
+                  <div className="flex justify-center items-center m-3 min-w-[30px] min-h-[30px] border-[3px] font-semibold text-[#D9D9D9] rounded-full">
                     2
                   </div>
                   <div className="flex flex-col p-3 pb-5">
@@ -76,7 +75,7 @@ export default function EngagementPlanTable({status}) {
           <tr className="hover:bg-[#F4F5FD] cursor-pointer">
             <td className="w-[60%]">
               <div className="flex flex-row items-center">
-                <div className="flex justify-center items-center m-3 w-[35px] h-[30px] border-[3px] font-semibold text-[#D9D9D9] rounded-full">
+                <div className="flex justify-center items-center m-3 min-w-[30px] min-h-[30px] border-[3px] font-semibold text-[#D9D9D9] rounded-full">
                   3
                 </div>
                 <div className="flex flex-col p-3 pb-5">
@@ -100,7 +99,7 @@ export default function EngagementPlanTable({status}) {
           <tr className="hover:bg-[#F4F5FD] cursor-pointer">
             <td className="w-[60%]">
               <div className="flex flex-row items-center">
-                <div className="flex justify-center items-center m-3 w-[35px] h-[30px] border-[3px] font-semibold text-[#D9D9D9] rounded-full">
+                <div className="flex justify-center items-center m-3 min-w-[30px] min-h-[30px] border-[3px] font-semibold text-[#D9D9D9] rounded-full">
                   4
                 </div>
                 <div className="flex flex-col p-3 pb-5">
@@ -124,7 +123,7 @@ export default function EngagementPlanTable({status}) {
           <tr className="hover:bg-[#F4F5FD] cursor-pointer">
             <td className="w-[60%]">
               <div className="flex flex-row items-center">
-                <div className="flex justify-center items-center m-3 w-[30px] h-[30px] border-[3px] font-semibold text-[#D9D9D9] rounded-full">
+                <div className="flex justify-center items-center m-3 min-w-[30px] min-h-[30px] border-[3px] font-semibold text-[#D9D9D9] rounded-full">
                   5
                 </div>
                 <div className="flex flex-col p-3 pb-5">

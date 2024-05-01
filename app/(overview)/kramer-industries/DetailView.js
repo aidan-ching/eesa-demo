@@ -50,17 +50,20 @@ export default function DetailView() {
 
           <div className="bg-white p-5 m-3 rounded flex justify-end items-end">
             {emailData === "" && ( // Default values shown
-              <LoadingAnimation/>
+              <LoadingAnimation />
             )}
 
             {emailData !== "" && (
               <React.Fragment>
-                <p className="whitespace-pre-line text-[13pt] ">
-                  {emailData}
-                </p>
+                <div>
+                  <p className="whitespace-pre-line text-[13pt] ">
+                    {emailData}
+                  </p>
 
-                <div className="absolute z-10 font-semibold text-[13pt] text-[#646464] border-4 border-[#D2DDFA] rounded px-3 flex items-center gap-2">
-                  Sent <FaCheck />
+                  <div className="flex justify-end items-start z-10 font-semibold text-[13pt] text-[#646464] ">
+                    <div className="flex flex-row items-center gap-2 border-4 border-[#D2DDFA] rounded px-3">Sent <FaCheck /></div>
+                    
+                  </div>
                 </div>
               </React.Fragment>
             )}

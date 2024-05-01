@@ -11,12 +11,11 @@ import Link from "next/link";
 import { usePathname } from 'next/navigation'
 
 
-import RelevantMetrics from "@/app/kramer-industries/RelevantMetrics";
-import DetailView from "@/app/kramer-industries/DetailView";
+
 
 import { useState, useEffect } from "react";
 
-import EngagementPlanTable from "@/app/kramer-industries/EngagementPlanTable";
+import EngagementPlanTable from "@/app/(overview)/kramer-industries/EngagementPlanTable";
 
 export default function Layout({ children }) {
   const [view, setView] = useState("metrics");

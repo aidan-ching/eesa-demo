@@ -1,8 +1,8 @@
-import MetricCard from "@/app/kramer-industries/MetricCard";
+import MetricCard from "@/app/(overview)/kramer-industries/MetricCard";
 
 export default function CardGrid() {
   return (
-    <div className="grid grid-cols-2 gap-5">
+    <div className="flex flex-col sm:grid sm:grid-cols-2 gap-10">
       <MetricCard
         heading="97%"
         subheader="Product Usage"

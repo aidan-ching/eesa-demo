@@ -1,8 +1,8 @@
-import ConversationCard from "@/app/kramer-industries/ConversationCard";
+import ConversationCard from "@/app/(overview)/acme-co/ConversationCard";
 
 export default function ConversationCardGrid() {
   return (
-    <div className="grid grid-cols-2 gap-5">
+    <div className="flex flex-col sm:grid sm:grid-cols-2 gap-10">
       <ConversationCard
         name="Katherine J."
         profilePictureSrc="/pfp/pfp1.png"

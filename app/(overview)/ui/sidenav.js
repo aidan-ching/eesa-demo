@@ -1,7 +1,7 @@
 
 import Image from "next/image";
-import NavLinks from "@/app/ui/navlinks"
-import UtilLinks from "@/app/ui/UtilLinks"
+import NavLinks from "@/app/(overview)/ui/navlinks"
+import UtilLinks from "@/app/(overview)/ui/UtilLinks"
 
 
 export default function SideNav() {

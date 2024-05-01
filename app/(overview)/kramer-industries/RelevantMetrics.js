@@ -1,6 +1,6 @@
 import { FaPlus } from "react-icons/fa6";
-import CardGrid from "@/app/acme-co/CardGrid";
-import ConversationCardGrid from "@/app/acme-co/ConversationCardGrid";
+import CardGrid from "@/app/(overview)/kramer-industries/CardGrid";
+import ConversationCardGrid from "@/app/(overview)/kramer-industries/ConversationCardGrid";
 import Image from "next/image";
 
 export default function RelevantMetrics() {

@@ -9,12 +9,12 @@ import { IoMdInformationCircleOutline } from "react-icons/io";
 import clsx from "clsx";
 import Link from "next/link";
 
-import RelevantMetrics from "@/app/acme-co/RelevantMetrics";
-import DetailView from "@/app/acme-co/DetailView";
+import RelevantMetrics from "@/app/(overview)/acme-co/RelevantMetrics";
+import DetailView from "@/app/(overview)/acme-co/DetailView";
 
 import { useState } from "react";
 
-import EngagementPlanTable from "@/app/acme-co/EngagementPlanTable";
+import EngagementPlanTable from "@/app/(overview)/acme-co/EngagementPlanTable";
 
 export default function Layout({ children }) {
   const [view, setView] = useState("metrics");

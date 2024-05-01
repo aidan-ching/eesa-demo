@@ -3,13 +3,13 @@ import { BsLayoutThreeColumns } from "react-icons/bs";
 import { AiOutlinePlus } from "react-icons/ai";
 import { AiOutlineDown } from "react-icons/ai";
 
-import RiskCard from "@/app/risk/RiskCard";
+import RiskCard from "@/app/(overview)/risk/RiskCard";
 
 export default function Page() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col"> 
       <div className="flex flex-row p-4 gap-3 items-center border-b">
-        <div className="font-semibold text-[10pt] flex items-center gap-2">
+        <div className="font-semibold text-[10pt] flex items-center gap-2"> 
           Sort By <AiOutlineDown />
         </div>
         <div className="border-r-2 h-[95%]" />
@@ -40,7 +40,8 @@ export default function Page() {
           Add filter
         </div>
       </div>
-      <div className="flex flex-row">
+
+      <div className="flex flex-col md:flex-row">
         <div className="p-5 flex flex-col gap-5">
           <div className="flex flex-row items-center gap-1 font-bold text-[16pt]">
             Identified <div className="text-[#989898]">(1)</div>{" "}

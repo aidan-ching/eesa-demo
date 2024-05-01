@@ -1,5 +1,5 @@
 import { IoAddOutline } from "react-icons/io5";
-import Table from "@/app/ui/Overview/table"
+import Table from "@/app/(overview)/ui/Overview/table"
 
 export default function Home() {
   return (
