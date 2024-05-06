@@ -31,7 +31,7 @@ export default function NavLinks() {
       </Link>
       <Link href="/">
         <div className="hover:bg-[#F3F3F4] px-3 py-2 mx-2 text-[#71717A] font-medium rounded-lg flex flex-row items-center">
-          <BookOpenIcon className="w-[18px] h-[18px] mr-3" />
+          <BookOpenIcon className="w-[20px] h-[20px] mr-3" />
           Boards
         </div>
       </Link>
@@ -41,19 +41,19 @@ export default function NavLinks() {
             path === "/risk" ? "bg-[#F3F3F4]" : ""
           }`}
         >
-          <ExclamationCircleIcon className="w-[23px] h-[23px] mr-3 ml-4" />
+          <ExclamationCircleIcon className="w-[20px] h-[20px] mr-3 ml-4" />
           Risk
         </div>
       </Link>
       <Link href="/">
         <div className="hover:bg-[#F3F3F4] px-3 py-2 mx-2 text-[#71717A] font-medium rounded-lg flex flex-row items-center">
-          <ChartBarSquareIcon className="w-[23px] h-[23px] mr-3 ml-4" />
+          <ChartBarSquareIcon className="w-[20px] h-[20px] mr-3 ml-4" />
           Opportunities
         </div>
       </Link>
       <Link href="/">
         <div className="hover:bg-[#F3F3F4] px-3 py-2 mx-2 text-[#71717A] font-medium rounded-lg flex flex-row items-center">
-          <BellAlertIcon className="w-[23px] h-[23px] mr-3 ml-4" />
+          <BellAlertIcon className="w-[20px] h-[20px] mr-3 ml-4" />
           Issues
         </div>
       </Link>
